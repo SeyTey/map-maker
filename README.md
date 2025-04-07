@@ -1,7 +1,4 @@
-# Compte-rendu
-
-
-## Tâche 1 - Création du dictionnaire
+# Tâche 1 - Création du dictionnaire
 
 
 > La première tâche consiste à parcourir les fichiers fournis pour récupérer toutes les tuiles disponibles.
@@ -33,3 +30,9 @@ def cree_dico(path:str) -> dict:
 ```
 
 En premier lieu, on écrie `cree_dico` de la façon suivante.
+
+# Tâche 2 - Moteur et placement des tuiles
+
+> La deuxième tâche du projet consiste à programmer la logique interne de MapMaker (le moteur),
+c’est-à-dire la partie qui permet de représenter l’état de la carte dans des structures de données
+appropriées, et de les modifier durant l’utilisation du programme.
