@@ -11,5 +11,5 @@ owijcdwiojc
 - hello
     - hello
 
-> [!info]
+> [!TIP]
 > hello
