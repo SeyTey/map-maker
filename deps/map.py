@@ -17,7 +17,8 @@ class Map:
         else:
             self.grille = grille
         self.dim = len(self.grille), len(self.grille[0])
-        self.tuiles = cree_dico('tuiles')
+        import os
+        self.tuiles = cree_dico('deps/tuiles')
 
     def dump_img(self):
         """

@@ -15,4 +15,5 @@ def cree_dico(path:str) -> dict:
         for tuile in tuiles
     }
 
-print(cree_dico('tuiles'))
+if __name__ == '__main__':
+    print(cree_dico('tuiles'))
