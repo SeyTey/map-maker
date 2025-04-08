@@ -1,4 +1,9 @@
+import os
+from random import randint
+from deps.noms_decors import creer_lst_decors
+
 tuiles = ('PMMR', 'GRRH', 'RRGB', 'DHGB', 'MMPM', 'PMPP', 'GRPH', 'MMRM', 'PPRR', 'PRMP', 'SHPH', 'RPRP', 'RMMP', 'FPPM', 'DHRR', 'RPGB', 'MMMP', 'PFFP', 'MPFP', 'DSDF', 'FFFF', 'RPMP', 'PPRM', 'MMMF', 'PPMP', 'PBDP', 'PRRR', 'MMPF', 'MMRP', 'PMFF', 'MFMM', 'PPFM', 'FPMM', 'MPPM', 'FMPF', 'PRRP', 'DSDP', 'PBDR', 'DHPR', 'FFFP', 'FFPP', 'MMMR', 'GBSS', 'DHRP', 'FBSB', 'PMPF', 'GRGS', 'FFPM', 'PFFM', 'PPMF', 'RRPR', 'FFMF', 'SHRH', 'MBSB', 'MPPF', 'PPFP', 'FPPP', 'DSDM', 'SHMH', 'PFMM', 'MFPM', 'FPPF', 'SHGS', 'RMPP', 'MFFP', 'GMGS', 'PMPR', 'PMMF', 'GPPH', 'RPMM', 'MPMM', 'RBSB', 'GFGS', 'DSDR', 'GPGS', 'MPPP', 'PPPP', 'MMFF', 'MPRM', 'FFFM', 'MRPP', 'PRPM', 'PBSB', 'FPMP', 'PRGB', 'MPFM', 'MMPR', 'RMMM', 'FMMP', 'SSSS', 'MMFM', 'FPFF', 'MFPP', 'PMFP', 'RPPR', 'FMPP', 'PPPM', 'PFPM', 'GBDH', 'RPPM', 'MPPR', 'MPFF', 'FFPF', 'MMFP', 'RRPP', 'PFFF', 'RBDR', 'DHPP', 'MMPP', 'MRMM', 'RPRR', 'FMMM', 'PPMM', 'PMMM', 'FMMF', 'FMFF', 'MFFF', 'FPMF', 'PPPF', 'RBDP', 'RRRP', 'PFMP', 'MFFM', 'PPFF', 'PPMR', 'PPGB', 'PRMM', 'MPRP', 'SHFH', 'SSDH', 'FFMM', 'PMRP', 'GPRH', 'RRRR', 'PFPP', 'PMMP', 'MRPM', 'PRPR', 'FFMP', 'MMMM', 'DSSB')
+
 
 def emplacement_valide(grille:list, i:int, j:int, nom_tuile:str):
     """
@@ -44,6 +49,14 @@ def tuiles_possibles(grille:list, i:int, j:int, list_tuiles:list):
     return options
 
 
+def placer_decors(grille, i, j, decors):
+    pass
+
+
+def placer_decors_auto(grille, i, j, decors):
+    pass
+
+
 def main():
     # grille de test du fichier donné
     grille = [['SSSS', 'SSSS', 'SSSS', 'SSSS', None],
@@ -56,5 +69,8 @@ def main():
     nom_tuile = 'PMMR'
     print(emplacement_valide(grille, i, j, nom_tuile))
     print(tuiles_possibles(grille, i, j, tuiles))
+    print(os.getcwd())
+    decors = creer_lst_decors(os.getcwd(), os.listdir())
+    print( decors)
 
 main()
