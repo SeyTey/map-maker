@@ -320,6 +320,7 @@ def ligne(
     )
 
 
+
 @_fenetre_creee
 def fleche(
         ax: float,
